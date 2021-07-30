@@ -6,7 +6,7 @@ inc x = x + 1
 
 genIfEven f = (\x -> ifEven f x)
 
-ifEvenInc x = (genIfEven inc) x
+ifEvenInc = genIfEven inc
 
 main = do
     let x = 10
